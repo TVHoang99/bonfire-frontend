@@ -1,0 +1,70 @@
+* {
+    border: 0;
+	margin:0;
+	padding : 0;
+}
+
+@hover-color: #d6ba8d;
+@color-333: #333;
+@color-fff: #fff;
+@color-595959: #595959;
+@color-ccc: #ccc;
+@color-faf9f9: #faf9f9;
+@color-eee: #eee;
+@color-92c5d9: #92c5d9;
+@color-696969: #696969;
+@color-ababab: #ababab;
+@color-2b2b2b: #2b2b2b;
+@color-efefef: #efefef;
+
+@media only screen and (min-width: 1200px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {   
+      max-width: 1200px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+}
+
+.transform (@_x:-50%,@_y:-50%) {
+	-webkit-transform: translate(@_x,@_y);
+	   -moz-transform: translate(@_x,@_y);
+	    -ms-transform: translate(@_x,@_y);
+	     -o-transform: translate(@_x,@_y);
+	        transform: translate(@_x,@_y);
+}
+
+.transformX (@_x:-50%) {
+	-webkit-transform: translateX(@_x);
+	   -moz-transform: translateX(@_x);
+	    -ms-transform: translateX(@_x);
+	     -o-transform: translateX(@_x);
+	        transform: translateX(@_x);
+}
+
+.transformY (@_y:-50%) {
+	-webkit-transform: translateY(@_y);
+	   -moz-transform: translateY(@_y);
+	    -ms-transform: translateY(@_y);
+	     -o-transform: translateY(@_y);
+	        transform: translateY(@_y);
+}
+
+.transitionEase (@_x: 0.5s) {
+	-webkit-transition: all @_x ease-in-out;
+	   -moz-transition: all @_x ease-in-out;
+	    -ms-transition: all @_x ease-in-out;
+	     -o-transition: all @_x ease-in-out;
+	        transition: all @_x ease-in-out;
+}
+
+.transition (@_x: 0.5s) {
+	-webkit-transition: all @_x;
+	   -moz-transition: all @_x;
+	    -ms-transition: all @_x;
+	     -o-transition: all @_x;
+	        transition: all @_x;
+}

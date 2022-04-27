@@ -1,0 +1,105 @@
+.brands {
+
+    &-row {
+        height: 200px;
+        text-align: center;
+        align-items: center;
+
+        .brands-one {
+            .transform(-3px, -4px);
+            opacity: 0.3;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .brands-two {
+            .transform(1px, 4px);
+            opacity: 0.3;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .brands-three {
+            .transform(0, 1px);
+            opacity: 0.3;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .brands-four {
+            opacity: 0.3;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .brands-five {
+            .transform(1px, 1px);
+            opacity: 0.3;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .brands-six {
+            .transform(-1px, 11px);
+            opacity: 0.3;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .brands {
+
+        &-row {
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .brands {
+
+        &-row {
+            height: 360px;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .brands {
+
+        &-row {
+            height: 360px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .brands {
+
+        &-row {
+            height: 360px;
+    
+            .col-sm-4 {
+                width: 50%;
+            }
+        }
+    }
+}

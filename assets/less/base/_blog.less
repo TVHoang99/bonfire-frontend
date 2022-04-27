@@ -1,0 +1,376 @@
+.blog {
+    background-color: @color-faf9f9;
+    padding-bottom: 102px;
+
+    &-title {
+        margin-bottom: 78px;
+        
+        h2 {
+            font-size: 56px;
+            line-height: 28px;
+            color: @color-333;
+            font-weight: 700;
+            font-family: 'Cormorant Garamond';
+            text-align: center;
+            .transform(0, -23px);
+        }
+    }
+
+    &-content {
+        margin-bottom: 66px;
+
+        .card {
+            border-width: 0;
+
+            a {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            &-body {
+                padding-left: 32px;
+                padding-right: 37px;
+                padding-bottom: 15px;
+
+                .card-date {
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: @color-ccc;
+                    font-weight: 400;
+                    font-family: 'Fira Sans';
+                    padding: 3px 0 1px;
+                    margin-bottom: 18px;
+                    text-transform: uppercase;
+                    letter-spacing: 1.5px;
+                }
+
+                .card-title {
+                    position: relative;
+                    font-size: 24px;
+                    letter-spacing: 1.2px;
+                    line-height: 32px;
+                    color: @color-333;
+                    font-weight: 700;
+                    font-family: 'Cormorant Garamond';
+
+                    &:hover {
+                        color: @hover-color;
+                    }
+                }
+                
+                .card-icon {
+                    margin-top: 49px;
+                    border-top: 1px solid @color-eee;
+                    padding-top: 12px;
+
+                    a {
+                        text-decoration: none;
+                        padding-right: 8px;
+
+                        i {
+                            font-size: 11px;
+                            line-height: 32px;
+                            color: @color-92c5d9;
+                        }
+                    }
+
+                    span {
+                        font-size: 14px;
+                        line-height: 32px;
+                        color: @color-696969;
+                        font-weight: 400;
+                        font-family: 'Fira Sans';
+                        padding-right: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    &-go {
+        text-align: center;
+
+        a {
+            display: inline-block;
+            font-size: 24px;
+            line-height: 28px;
+            color: @color-333;
+            font-weight: 400;
+            font-family: 'Cormorant Garamond';
+            text-decoration: none;
+            .transformX(-2px);
+            position: relative;
+            z-index: 0;
+
+            &:hover {
+                color: @hover-color;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                border: 1px solid @color-fff;
+                width: 145px;
+                height: 17px;
+                top: 15px;
+                left: -24px;
+                background-color: @color-fff;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .blog {
+        padding-bottom: 85px;
+
+        &-title {
+            margin-bottom: 60px;
+            
+            h2 {
+                font-size: 48px;
+                line-height: 28px;
+                .transform(0, -21px);
+            }
+        }
+
+        &-content {
+            margin-bottom: 60px;
+
+            .card {
+    
+                &-body {
+                    padding: 15px;
+    
+                    .card-date {
+                        font-size: 12px;
+                        letter-spacing: 1px;
+                        line-height: 20px;
+                        padding-top: 0;
+                        margin-bottom: 15px;
+                    }
+    
+                    .card-title {
+                        font-size: 20px;
+                        letter-spacing: 1.3px;
+                        line-height: 26px;
+                    }
+                    
+                    .card-icon {
+                        margin-top: 44px;
+                        padding-top: 8px;
+    
+                        a {
+                            padding-right: 14px;
+    
+                            i {
+                                font-size: 10px;
+                                line-height: 30px;
+                            }               
+                        }
+
+                        span {
+                            font-size: 12px;
+                            padding-right: 22px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-go {
+    
+            a {
+                font-size: 22px;
+    
+                &::before {
+                    width: 139px;
+                    height: 16px;
+                    top: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .blog {
+        padding-bottom: 60px;
+
+        &-title {
+            margin-bottom: 50px;
+            
+            h2 {
+                font-size: 45px;
+                line-height: 28px;
+                .transform(0, -20px);
+            }
+        }
+
+        &-content {
+            margin-bottom: 45px;
+
+            .card {
+    
+                &-body {
+                    padding: 10px;
+    
+                    .card-date {
+                        font-size: 11px;
+                        letter-spacing: 1px;
+                        line-height: 18px;
+                        padding-top: 0;
+                        margin-bottom: 10px;
+                    }
+    
+                    .card-title {
+                        font-size: 15px;
+                        letter-spacing: 1px;
+                        line-height: 22px;
+                    }
+                    
+                    .card-icon {
+                        margin-top: 22px;
+                        padding-top: 2px;
+    
+                        a {
+                            padding-right: 9px;
+    
+                            i {
+                                font-size: 8px;
+                                line-height: 24px;
+                            }                             
+                        }
+
+                        span {
+                            font-size: 10px;
+                            padding-right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-go {
+    
+            a {
+                font-size: 18px;
+    
+                &::before {
+                    width: 117px;
+                    height: 15px;
+                    top: 15px;
+                    left: -20px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .blog {
+        padding-bottom: 60px;
+
+        &-title {
+            margin-bottom: 45px;
+            
+            h2 {
+                font-size: 35px;
+                line-height: 28px;
+                .transform(0, -19px);
+            }
+        }
+
+        &-content {
+            margin-bottom: 10px;
+
+            .col-sm-12 {
+                max-width: 80%;
+                margin: auto;
+                margin-bottom: 30px;
+
+                .card {
+    
+                    &-body {
+                        padding: 25px;
+        
+                        .card-date {
+                            font-size: 13px;
+                            letter-spacing: 1px;
+                            line-height: 20px;
+                            padding-top: 0;
+                            margin-bottom: 15px;
+                        }
+        
+                        .card-title {
+                            font-size: 25px;
+                            letter-spacing: 3px;
+                            line-height: 30px;
+                        }
+                        
+                        .card-icon {
+                            margin-top: 40px;
+                            padding-top: 8px;
+        
+                            a {
+                                padding-right: 14px;
+        
+                                i {
+                                    font-size: 10px;
+                                    line-height: 26px;
+                                }       
+                            }
+
+                            span {
+                                font-size: 14px;
+                                padding-right: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &-go {
+    
+            a {
+                font-size: 18px;
+    
+                &::before {
+                    width: 117px;
+                    height: 15px;
+                    top: 15px;
+                    left: -20px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 380px) and (max-width: 575px) {
+    .blog {
+        padding-bottom: 60px;
+
+        &-title {
+            margin-bottom: 45px;
+
+            h2 {
+                font-size: 45px;
+                line-height: 28px;
+                .transform(0, -21px);
+            }
+        }
+
+        &-content {
+            margin-bottom: 10px;
+
+            .card {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
